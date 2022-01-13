@@ -274,14 +274,13 @@ ul li:hover ul {
      font-style: italic;
 }
 input:focus{
-    background-color: rgb(202, 165, 202);
-    height: 100px;
-    width: 500px;
+    background-color: rgb(195, 145, 216);
+    width: 400px;
+    height: 80px;
     transition: 3s;
+    color: firebrick;
     font-size: 20px;
-    color: darkred;
-    }
-
+}
         /* Estilos tablet */
 @media (min-width: 768px){
     .menu{
