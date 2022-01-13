@@ -1,0 +1,534 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.grilla{
+    display: grid;
+    grid-template-columns: 30fr 30fr 30fr;
+    grid-template-rows: 90px 31px 1030px 20px 380px 30px;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "imagenes imagenes imagenes"
+    "subtitulo subtitulo subtitulo"
+    "section1 section2 section3"
+    "footer footer footer"
+    ;
+    grid-column-gap: 0%;
+    grid-row-gap: 0%;
+}
+.grillaS{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 90px 31px 1090px 30px;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "imagenes imagenes imagenes"
+    "footer footer footer"
+    ;
+    grid-column-gap: 0%;
+    grid-row-gap: 0%;
+}
+.grilla3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 90px 31px 645px 30px;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "section4  section5"
+    "footer footer"
+    ;
+    grid-column-gap: 0%;
+    grid-row-gap: 0%;
+}
+.grilla3B{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 90px 31px 430px 30px;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "section4  section5"
+    "footer footer"
+    ;
+    grid-column-gap: 0%;
+    grid-row-gap: 0%;
+}
+.grillaF{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 90px 31px 10fr 30px;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "footer footer footer"
+    ;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.header{
+    grid-area: header;
+    background-image: linear-gradient(45deg, #fcb4ed, #862d6e, #750865);
+}    
+.menu{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #986D8E;
+    padding: 5px;
+    width: 80px;
+}
+.ulMenu{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+.submenu{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #986D8E;
+    padding: 8px;
+    width: 80px;
+    background-color: #D9CAB3;
+}
+.logoTitulo{
+    padding-top: 10px;
+}
+.nav{
+    grid-area: nav;
+    background-color: #D9CAB3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imagenes{
+    grid-area: imagenes;
+    background-color: #986D8E;
+    display: flex;
+    flex-direction: column;
+}
+
+.section1{
+    text-align: center;
+    grid-area: section1;
+    background-color: #D9CAB3;
+}
+.section2{
+    text-align: center;
+    grid-area: section2;
+    background-color: #D9CAB3;
+}
+.section3{
+    text-align: center;
+    grid-area: section3;
+    background-color: #D9CAB3;
+}
+.section4{
+    text-align: center;
+    grid-area: section4;
+    background-color: #D9CAB3;
+}
+.section5{
+    text-align: center;
+    grid-area: section5;
+    background-color: #D9CAB3;
+}
+.footer{
+    grid-area: footer;
+    background-color: #986D8E;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo{
+    margin: auto 45%;
+}
+.titulo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#D9CAB3;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+}
+.enlaceRedes{
+    text-decoration: none;
+    color: rgb(255, 235, 209);
+    font-size: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3px;
+    width: 100px;
+    text-align: center;
+    margin: auto;
+}
+
+.pieFoto{
+    color: #D9CAB3;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    margin: 2px;
+}
+.subtitulo{
+    color: #80386f;
+    font-weight: bold;
+    grid-area: subtitulo;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    height: 20px;
+    padding: 5px;
+    background-color: #87A8A4;
+}
+
+.main{
+    grid-area: main;
+    background-color:#D9CAB3;
+    display: flex;
+    flex-direction: column;
+}
+.pieFoto2{
+    color: #80386f;
+    text-align: center;
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 55px;
+    width: 100%;
+}
+.imagen2{
+    padding: 8px;
+    width: 100%;
+}
+.parrafo{
+    color: sienna;
+    padding: 8px;
+    text-align: center;
+    font-size: 10px;
+    font-family: cursive;
+    margin: 5px;
+}
+.productos{
+    list-style: none;
+    font-size: 10px;
+    color: saddlebrown;
+}
+ul {
+    list-style: none;
+    font-size:0
+}
+li {
+    display: inline-block;
+    position:relative;
+    font-size: 14px;
+}
+ul ul {
+    position: absolute;
+    display: none;
+    
+}
+ul ul li {
+    display: block;
+    
+}
+ul li:hover ul {
+    display:block;
+}
+.formulario{
+    border-color: #986D8E;
+    background-color: #D9CAB3;
+    padding: 2px;
+    margin: 10 px;
+    font-size: 10px;
+    font-style: italic;
+    height: 20px;
+}
+.formularioContacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formularioenviar{
+     margin: 10px;
+     background-color: #986D8E;
+     color: #D9CAB3;
+     font-size: 14px;
+     padding: 2px;
+     font-size: 10px;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.formularioConsulta{
+     border-color: #986D8E;
+     background-color: #D9CAB3;
+     padding: 2px;
+     margin: 10 px;
+     height: 90px; 
+     font-size: 10px;
+     font-style: italic;
+}
+        /* Estilos tablet */
+@media (min-width: 768px){
+    .menu{
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100px;
+        padding: 2px;
+    }
+    .grilla{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 120px 31px 286px 30px 620px 30px;
+        grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "imagenes imagenes imagenes"
+        "subtitulo subtitulo subtitulo"
+        "section1  section2 section3"
+        "footer footer footer"
+        ;
+        grid-column-gap: 0%;
+        grid-row-gap: 0%;
+    }
+    .grillaF{
+        grid-template-rows: 120px 31px 10fr 30px;
+    }
+    .grillaS{
+        grid-template-rows: 150px 35px 360px 40px;
+    }
+    .grilla3{
+        grid-template-rows: 120px 35px 250px 250px 40px;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "section4 section4"
+        "section5  section5"
+        "footer footer"
+        ;
+    }
+    .grilla3B{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 150px 38px 380px 40px;
+    }
+    .img{
+        width: 100%;
+    }
+    .section4{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .section5{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .imagenes{
+        grid-area: imagenes;
+        background-color: #D9CAB3;
+        display: flex;
+        flex-direction: row;
+    }
+    .imagen{
+        width: 256px;
+        height: 256px;
+    }
+    .titulo{
+        font-size: 20px;
+    }
+    .pieFoto{
+        font-size: 12px;
+        width: 256px;
+        height: 30px;
+        color: #986D8E;
+    }
+    .pieFoto2{
+        font-size: 12px;
+        width: 250px;
+        height: 60px;
+    }
+    .subtitulo{
+        font-size: 16px;
+        height: 30px;
+
+    }
+    .enlaceRedes{
+        font-size: 14px;
+    }
+    .submenu{
+        font-size: 14px;
+        width: 100px;
+        margin-left: 100px;
+    }
+    .imagen2{
+        width: 250px;
+    }
+    .subtitulo1{
+        height: 30px;
+        padding: 5px;
+    }
+    .formulario{
+        padding: 4px;
+        margin: 12 px;
+        font-size: 12px;
+        height: 25px;
+        width: 300px;
+    }
+    .formularioenviar{
+         margin: 12px;
+         font-size: 16px;
+         padding: 4px;
+         font-size: 12px;
+    }
+    .formularioConsulta{
+         padding: 4px;
+         margin: 14 px;
+         height: 130px; 
+         font-size: 12px;
+         width: 300px;
+    }
+    .parrafo{
+        font-size: 12px;
+    }
+}
+       /* Estilos desktop */
+@media(min-width: 1024px){
+    .menu{
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 110px;
+        padding: 4px;
+        text-align: center;
+    }
+    .grilla{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 150px 34px 400px 34px 760px 30px;
+        grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "imagenes imagenes imagenes"
+        "subtitulo subtitulo subtitulo"
+        "section1  section2 section3"
+        "footer footer footer"
+        ;
+        grid-column-gap: 0%;
+        grid-row-gap: 0%;
+    }
+    .grillaF{
+        grid-template-rows: 150px 31px 10fr 30px;
+    }
+    .grilla3{
+        grid-template-rows: 190px 40px 520px 520px 40px;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "section4 section4"
+        "section5  section5"
+        "footer footer"
+        ;
+    }
+    .img{
+        width: 100%;
+        padding: 10px;
+    }
+    .grilla3B{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 180px 38px 540px 40px;
+    }
+    .img{
+        width: 300px;
+    }
+    .section4{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .section5{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .imagenes{
+        grid-area: imagenes;
+        background-color: #D9CAB3;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+
+    }
+    .imagen{
+        width: 341px;
+        height: 341px;
+    }
+    .titulo{
+        font-size: 24px;
+    }
+    .pieFoto{
+        font-size: 16px;
+        width: 341px;
+    }
+    .pieFoto2{
+        font-size: 16px;
+        width: 341px;
+        padding: 18px;
+    }
+    .subtitulo{
+        font-size: 18px;
+        height: 34px;
+    }
+    .enlaceRedes{
+        font-size: 18px;
+    }
+    .submenu{
+        font-size: 15px;
+        width: 110px;
+        margin-left: 110px;
+        padding: 4px;
+        text-align: center;
+    }
+    ul ul {
+        margin-top: -20px;
+    }
+    .imagen2{
+        width: 341px;
+    }
+    .subtitulo1{
+        height: 30px;
+        padding: 5px;
+    }
+    .formulario{
+        padding: 5px;
+        margin: 14 px;
+        font-size: 14px;
+        height: 30px;
+        width: 350px;
+    }
+    .formularioenviar{
+         margin: 14px;
+         font-size: 18px;
+         padding: 5px;
+         font-size: 14px;
+    }
+    .formularioConsulta{
+         padding: 5px;
+         margin: 18 px;
+         height: 150px; 
+         font-size: 14px;
+         width: 350px;
+    }
+    .parrafo{
+        font-size: 14px;
+    }
+    .grillaS{
+        grid-template-rows: 170px 35px 515px 40px;
+    }
+}
