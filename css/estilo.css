@@ -273,6 +273,15 @@ ul li:hover ul {
      font-size: 10px;
      font-style: italic;
 }
+input:focus{
+    background-color: rgb(202, 165, 202);
+    height: 100px;
+    width: 500px;
+    transition: 3s;
+    font-size: 20px;
+    color: darkred;
+    }
+
         /* Estilos tablet */
 @media (min-width: 768px){
     .menu{
